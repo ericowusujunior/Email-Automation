@@ -1,24 +1,21 @@
 import yagmail
 import os
-import time
 
-"This was to send a single email"
+"Email With Attachment"
 
 sender = "e.owusu89@gmail.com"
-receiver = "1yr89yqf@spymail.one"
+receiver = "e.owusu@dal.ca"
 
 subject = "Automated Trial Email"
 
-content = """Sending email using python"""
+content = ["""Sending email using python""", 'attachment.txt']
 
-while True:
 
-  yag = yagmail.SMTP(user = sender,password = os.getenv('PASSWORD'))
+yag = yagmail.SMTP(user = sender,password = os.getenv('PASSWORD'))
 
-  yag.send(to=receiver, subject = subject, contents = content)
-  my_secret = os.environ['PASSWORD']
-  print("Email Sent!")
-  time.sleep(60)
+yag.send(to=receiver, subject = subject, contents = content)
+my_secret = os.environ['PASSWORD']
+print("Email Sent!")
 
 
 
