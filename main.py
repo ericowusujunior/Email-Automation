@@ -1,5 +1,6 @@
 import yagmail
 import os
+"This was to send a single email"
 
 sender = "e.owusu89@gmail.com"
 receiver = "e.owusu@dal.ca"
@@ -14,3 +15,5 @@ yag.send(to=receiver, subject = subject, contents = content)
 
 print("Email Sent!")
 my_secret = os.environ['PASSWORD']
+
+
