@@ -9,7 +9,7 @@ receiver = "1yr89yqf@spymail.one"
 
 subject = "Automated Trial Email"
 
-content = """"Sending email using python"""
+content = """Sending email using python"""
 
 while True:
 
